@@ -1,0 +1,273 @@
+body {
+	background-color: #EEEEEE;
+	height: 100%;
+	min-width: 1260px;
+	-webkit-font-smoothing: antialiased;
+}
+
+div {
+	margin: 20px;
+	font-family: 'Abel', sans-serif;
+	font-size: 26px;
+}
+
+.wrapper {
+	display: flex;
+	flex-flow: row wrap;
+	text-align: center;
+	margin: 0;
+}
+
+.header, .top-data, .top-row, .focus-price, .difference, .graph, .timeline, .bottom-data {
+	flex: 1 100%;
+}
+
+.header {
+	text-align: left;
+	position: relative;
+	flex: 3;
+	display: flex;
+}
+
+.past_searches {
+	flex: 3;
+	color: rgb(88, 100, 105);
+	line-height: 45px;
+	text-transform: uppercase;
+	display: flex;
+	overflow-x: hidden;
+	overflow-y: hidden;
+}
+
+.past_searches a {
+	margin-left: 30px;
+	cursor: pointer;
+	margin-top: 10px;
+	line-height: 1em;
+}
+
+.past_searches a:hover {
+	color: rgb(163, 169, 171);
+}
+
+.top-data,
+.difference {
+	margin: 0;
+}
+
+.top-row {
+	flex: 1 auto;
+	display: inline;
+	margin: 0;
+}
+
+.focus-price {
+	flex: 1 auto;
+	display: inline;
+	/*margin: 3px;*/
+	font-size: 72px;
+	font-family: 'Ropa Sans', sans-serif;
+	letter-spacing: -8px;
+	margin: 0;
+}
+
+.dollarSign {
+	text-align: right;
+	margin-top: 31px;
+	text-shadow: 2px 4px 2px #B2B2B2;
+}
+
+.middlePrice {
+	flex: 0 auto;
+	margin-left: -6px;
+	text-align: center;
+	font-size: 144px;
+	line-height: 0.7em;
+	letter-spacing: -20px;
+	text-shadow: 2px 8px 2px #B2B2B2;
+}
+
+.lastThree {
+	margin-left: 10px;
+	text-align: left;
+	margin-top: 37px;
+	text-shadow: 2px 4px 2px #B2B2B2;
+}
+
+.difference {
+	font-size: 20px;
+}
+
+.graph {
+	margin: 0;
+}
+
+.chart {
+	height: 420px;
+	width:100%;
+	margin: 0;
+	margin-left: -20px;
+	margin-bottom: 20px;
+}
+
+.timeline {
+	flex: 1 auto;
+	display: inline;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
+.timeline a {
+	text-decoration: none;
+}
+
+.timeline a:visited,
+a:active {
+	color: rgb(88, 100, 105);
+}
+
+.bottom-data {
+	flex: 1 auto;
+	display: inline;
+}
+
+.bottom-data div {
+	margin: 10px 0px 10px 0px;
+	font-size: 24px;
+}
+
+::-webkit-input-placeholder {
+   color: #586468;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: #586468;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #586468;
+}
+
+:-ms-input-placeholder {
+   color: #586468;
+}
+
+.icon_search {
+	background-image: url(assets/icon_search.png);
+	background-position: left center;
+	background-repeat: no-repeat;
+	background-size: 32px 32px;
+	padding-left: 40px; /* Or size of icon + spacing */
+}
+
+.search {
+	background-color: transparent;
+	border: 0 solid;
+	height: 45px;
+	width: 400px;
+	color: rgb(88, 100, 105);
+	font-size: 26px;
+	font-family: 'Abel', sans-serif;
+	text-transform: uppercase;
+}
+
+.search:focus {
+	outline: 0;
+}
+
+.stockSymbol {
+	text-transform: uppercase;
+	text-align: right;
+}
+
+.stockName {
+	text-align: left;
+	color: rgb(88, 100, 105);
+}
+
+.midleft,
+.midright {
+	color: rgb(163, 169, 171);
+	text-transform: uppercase;
+}
+
+.farleft {
+	flex: 5;
+}
+
+.left {
+	text-align: left;
+	flex: 2;
+}
+
+.midleft {
+	text-align: right;
+	flex: 3;
+}
+
+.midright {
+	text-align: left;
+	flex: 3;
+}
+
+.right {
+	text-align: right;
+	flex: 2;
+}
+
+.farright {
+	text-align: right;
+	flex: 5;
+}
+
+#datalist {
+	position: absolute;
+  top: 45px;
+  left: 42px;
+	color: rgb(88, 100, 105);
+	z-index: 10;
+	font-size: 22px;
+}
+
+#datalist p {
+	margin-bottom: 10px;
+	cursor: pointer;
+}
+
+#datalist p:hover {
+	margin-bottom: 10px;
+	color: rgb(163, 169, 171);
+}
+
+.keyboard {
+	position: fixed;
+	top: 0px;
+	right: 0px;
+	color: rgb(88, 100, 105);
+}
+
+.tips {
+	margin-bottom: 0;
+	font-size: 18px;
+	font-family: 'Ropa Sans', sans-serif;
+	text-transform: uppercase;
+	margin-right: 14px;
+	margin-top: 0px;
+	text-align: left;
+}
+
+.close-btn {
+	margin: 0;
+	height: 20px;
+	width: 20px;
+	background-image: url(http://new4.fjcdn.com/pictures/Which+close+button+should+i+use+i+have+this+two_e08deb_5442440.png);
+	background-position: top right;
+	background-repeat: no-repeat;
+	background-size: 20px 20px;
+	cursor: pointer;
+	text-align: right;
+}
+
+.tips span {
+	display: block;
+}

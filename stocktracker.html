@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Stock Tracker</title>
+	<link href="https://fonts.googleapis.com/css?family=Ropa+Sans:400,400italic" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="stocktracker.css">
+	<link rel="stylesheet" href="reset.css">
+	<link rel="shortcut icon" type="image/png" href="assets/favicon.png"/>
+
+
+</head>
+<body>
+
+<div class="wrapper">
+
+
+	<div class="header">
+		<form autocomplete="off">
+			<input id="input" class="icon_search search" placeholder=" Search company or stock symbol..." autofocus></input>
+		</form>
+		<ul id="datalist"></ul>
+		<ul class="past_searches"></ul>
+	</div>
+
+
+	<div class="top-data">
+		<div class="top-row stockSymbol"></div>
+		<div class="top-row stockName"></div>
+	</div>
+		<div class="focus-price dollarSign"></div>
+		<div class="focus-price middlePrice"></div>
+		<div class="focus-price lastThree"></div>
+		<div class="difference"></div>
+
+
+	<div class="graph">
+		<div id="chart" class="chart"></div>
+		<div class="timeline 1D"><a href>1D</a></div>
+		<div class="timeline 1M"><a href>1M</a></div>
+		<div class="timeline 3M"><a href>3M</a></div>
+		<div class="timeline 6M"><a href>6M</a></div>
+		<div class="timeline 1Y"><a href>1Y</a></div>
+	</div>
+
+	<div class="bottom-data farleft"></div>
+	<div class="bottom-data left">
+		<div class="data stockOpen"></div>
+		<div class="data stockDaysHigh"></div>
+		<div class="data stockDaysLow"></div>
+		<div class="data stockYearHigh"></div>
+		<div class="data stockYearLow"></div>
+	</div>
+	<div class="bottom-data midleft">
+		<div>Open</div>
+		<div>High</div>
+		<div>Low</div>
+		<div>52 Week High</div>
+		<div>52 Week Low</div>
+	</div>
+	<div class="bottom-data midright">
+		<div>Previous Close</div>
+		<div>Volume</div>
+		<div>Avg Volume</div>
+		<div>Market Cap</div>
+		<div>P/E Ratio</div>
+	</div>
+	<div class="bottom-data right">
+		<div class="data stockPreviousClose"></div>
+		<div class="data stockVolume"></div>
+		<div class="data stockAverageDailyVolume"></div>
+		<div class="data stockMarketCapitalization"></div>
+		<div class="data stockPERatio"></div>
+	</div>
+	<div class="bottom-data farright"></div>
+
+	<div class="keyboard">
+		<div class="close-btn"></div>
+		<div class="tips" id="tips">
+			<span>&uarr; and &darr; to navigate search results</span>
+			<span>&larr; and &rarr; to navigate past searches</span>
+			<span>hover over the graph to see historical prices</span>
+		</div>
+	</div>
+</div>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script type="text/javascript" src="jquery.canvasjs.min.js"></script>
+<script src="gatracker.js"></script>
+<script src="moment.js"></script>
+<script src="moment-timezone-2010-2020.js"></script>
+<script src="time.js"></script>
+<script src="previousload.js"></script>
+<script src="historicalstockdata.js"></script>
+<script src="tickerdata.js"></script>
+<script src="search.js"></script>
+<script src="pastsearches.js"></script>
+<script src="tooltip.js"></script>
+
+
+
+</body>
+</html>
