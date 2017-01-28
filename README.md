@@ -4,4 +4,4 @@ made this stocktracker because most stock sites are clunky to navigate/don't hav
 
 check it out here: http://jaytongsays.com/stocktracker
 
-![alt text](http://imgur.com/a/MsJzk "stocktracker screenshot")
+![Imgur](http://i.imgur.com/Djqncnt.jpg)
